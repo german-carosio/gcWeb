@@ -7,6 +7,58 @@
 }
 
 
+.accordion {
+  width: 300px;
+}
+
+details {
+  background: #000; /* Fondo más claro para contraste */
+  border: 1px solid #555;
+  
+  
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color: #fff; /* Texto blanco */
+}
+
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Texto blanco */
+  padding: 10px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  color: #1E90FF; /* Color del texto cuando está abierto */
+}
+
+details p {
+  margin: 10px 0 0;
+  padding: 10px;
+  background: #000; /* Fondo más claro para el contenido */
+  
+  color: #fff; /* Texto blanco */
+}
+
+summary i {
+  transition: transform 0.3s ease;
+}
+
+details[open] summary i {
+  transform: rotate(180deg);
+}
+
+
+
 @media (min-width: 768px) {
   .main {
     padding: 0 20px;

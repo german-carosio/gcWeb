@@ -67,7 +67,7 @@ const Navbar = () => {
                     </li>
                     <li className={styles.menuItem}>
                         <span className={styles.menuLink} onClick={toggleSubMenu}>
-                            Service <i className={`fa-solid ${isSubMenuOpen ? 'fa-caret-up' : 'fa-caret-down'}`}></i>
+                            Service <i className={`fa-solid ${isSubMenuOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
                         </span>
                         <ul className={`${styles.subMenu} ${isSubMenuOpen ? styles.subMenuVisible : ''}`}>
                             <li className={styles.subMenuItem}>
