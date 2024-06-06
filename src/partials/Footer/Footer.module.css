@@ -1,0 +1,17 @@
+.footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer div {
+    color: var(--blanco);
+    background-color: var(--gris-oscuro);
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 20px;
+    }
+  }
