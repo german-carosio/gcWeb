@@ -1,0 +1,52 @@
+.title {
+  margin-top: 20px;
+  color: #fff;
+}
+.accordion {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .accordion details {
+    background: #000; /* Fondo más claro para contraste */
+    border: 1px solid #555;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #fff; /* Texto blanco */
+  }
+  
+  .accordion summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+  }
+  
+  .accordion summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .accordion details[open] summary {
+    color: #1E90FF; /* Color del texto cuando está abierto */
+  }
+  
+  .accordion details p {
+    margin: 10px 0 0;
+    padding: 10px;
+    background: #000; /* Fondo más claro para el contenido */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .accordion summary i {
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion details[open] summary i {
+    transform: rotate(180deg);
+  }
+  

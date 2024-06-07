@@ -29,6 +29,9 @@ const Navbar = () => {
         setIsSubMenuOpen(false);
     };
 
+    // Lógica para resaltar el enlace "Service"
+    const isServicePage = ['/service1', '/service2', '/service3'].includes(location.pathname);
+
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
@@ -66,8 +69,11 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className={styles.menuItem}>
-                        <span className={styles.menuLink} onClick={toggleSubMenu}>
-                            Service <i className={`fa-solid ${isSubMenuOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+                        <span 
+                            className={`${styles.menuLink} ${isServicePage ? 'naranja' : ''}`} 
+                            onClick={toggleSubMenu}
+                        >
+                            Service <i className={`fa-solid fa-chevron-down ${isSubMenuOpen ? styles.rotate : ''}`}></i>
                         </span>
                         <ul className={`${styles.subMenu} ${isSubMenuOpen ? styles.subMenuVisible : ''}`}>
                             <li className={styles.subMenuItem}>
@@ -115,6 +121,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
 
 
 

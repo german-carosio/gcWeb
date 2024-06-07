@@ -2,6 +2,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helmet-async
 import Portada from '../componets/Portada/Portada';
+import Acordeon from '../componets/Acordeon/Acordeon';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <meta name="keywords" content="inicio, sitio web, react" />
       </Helmet>
       <Portada/>
+      <Acordeon/>
     </div>
   );
 };

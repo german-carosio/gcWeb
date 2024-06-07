@@ -56,6 +56,15 @@
   cursor: pointer;
 }
 
+/* Estilos para la rotación del ícono */
+.menuLink i {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
 .menuItem {
   position: relative;
 }
