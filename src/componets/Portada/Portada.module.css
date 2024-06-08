@@ -1,4 +1,36 @@
 .container {
     height: calc(80vh - 80px);
     background-color: var(--gris-oscuro);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
+
+
+
+.lado1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    padding: 20px;
+}
+
+.lado2 {
+    background-image: url('../../assets/images/fondoPortada.png');
+    background-size: cover;       /* Ajusta la imagen para que cubra el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen en el contenedor */
+    width: 100%;                  /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 100%;                 /* Asegura que el contenedor ocupe todo el alto disponible */
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        height: calc(80vh - 80px);
+        background-color: var(--gris-oscuro);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }

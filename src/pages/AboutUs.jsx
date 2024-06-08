@@ -12,6 +12,7 @@ const AboutUs = () => {
       </Helmet>
       
     </div>
+    
   );
 };
 
