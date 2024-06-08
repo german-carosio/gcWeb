@@ -3,8 +3,8 @@ import styles from './Portada.module.css'
 
 const Portada = () => {
   return (
-    <section className={styles.container}>
-    </section>
+    <div className={styles.container}>
+    </div>
   )
 }
 

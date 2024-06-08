@@ -9,12 +9,22 @@
 }
 
 :root {
+
+  /*Colores*/
     --negro: #000000;
     --blanco: #FFFFFF;
     --verde: #28a745;
     --naranja: #f06529;
     --azul: #0056b3;
     --gris-oscuro: #333333;
+
+  /*Tamaños de letras*/
+  --s: 0.9em;
+  --m: 1em;
+  --l: 1.2em;
+  --xl:1.5em;
+  --xxl: 2em;
+
 }
 
 
@@ -28,7 +38,25 @@ a, li {
   text-decoration: none;
   list-style: none;
   color: var(--blanco);
+  font-size: var(--m);
 }
+
+h1 {
+  font-size: var(--xxl);
+}
+
+h2 {
+  font-size: var(--l);
+}
+
+h3 {
+  font-size: var(--m);
+}
+
+p {
+  font-size: var(--m);
+}
+
 
 .naranja {
     color: var(--naranja);

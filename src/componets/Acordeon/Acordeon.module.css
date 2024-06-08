@@ -1,10 +1,9 @@
 .title {
-  margin-top: 20px;
   color: #fff;
 }
 .accordion {
     width: 100%;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   
   .accordion details {
@@ -30,17 +29,17 @@
   .accordion summary::-webkit-details-marker {
     display: none;
   }
-  
-  .accordion details[open] summary {
-    color: #1E90FF; /* Color del texto cuando está abierto */
-  }
-  
+    
   .accordion details p {
     margin: 10px 0 0;
     padding: 10px;
     background: #000; /* Fondo más claro para el contenido */
     color: #999; /* Texto blanco */
     font-size: 1em;
+  }
+
+  .accordion summary span {
+    font-size: var(--m);
   }
   
   .accordion summary i {

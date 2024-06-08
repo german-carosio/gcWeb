@@ -1,4 +1,4 @@
 .container {
-    height: calc(75vh - 80px);
+    height: calc(80vh - 80px);
     background-color: var(--gris-oscuro);
 }
