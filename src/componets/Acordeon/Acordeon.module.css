@@ -7,10 +7,9 @@
   }
   
   .accordion details {
-    background: #000; /* Fondo más claro para contraste */
-    border: 1px solid #111;
+    background: var(--negro); /* Fondo más claro para contraste */
+    border-top: 1px solid var(--gris-oscuro);
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     color: #fff; /* Texto blanco */
   }
   
@@ -33,7 +32,7 @@
   .accordion details p {
     margin: 10px 0 0;
     padding: 10px;
-    background: #000; /* Fondo más claro para el contenido */
+    background: var(--negro); /* Fondo más claro para el contenido */
     color: #999; /* Texto blanco */
     font-size: 1em;
   }
@@ -42,6 +41,11 @@
     font-size: var(--m);
   }
   
+  .accordion summary .icon {
+    background-color: var(--gris-oscuro);
+    padding: 6px 8px;
+  }
+
   .accordion summary i {
     transition: transform 0.3s ease;
   }
