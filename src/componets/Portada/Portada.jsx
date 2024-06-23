@@ -3,6 +3,7 @@ import styles from './Portada.module.css'
 
 
 
+
 const Portada = () => {
   return (
     <div className={styles.container}>
@@ -13,7 +14,9 @@ const Portada = () => {
           <button>Boton</button>
         </div>
       </div>
-      <div className={`${styles.lado} ${styles.lado2}`}></div>
+      <div className={`${styles.lado} ${styles.lado2}`}>
+       
+      </div>
     </div>
   )
 }

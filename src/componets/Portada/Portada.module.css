@@ -5,7 +5,14 @@
     grid-template-columns: repeat(1, 1fr);
 }
 
-
+.lado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    padding: 20px;
+}
 
 .lado1 {
     display: flex;
